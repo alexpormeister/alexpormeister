@@ -35,6 +35,9 @@ nav a:hover {
 h2, h4 {
     margin: 10px 0;
 }
+h3 {
+    color: black;
+}
 figure {
     margin: 20px 0;
 }
