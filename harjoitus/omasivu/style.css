@@ -1,9 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
-
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f8f8;
@@ -11,15 +11,17 @@ body {
     line-height: 1.6; 
 }
 
+header {
+    background-color: #4C6375;
+    border-bottom: 3px solid #333;
+    border-top: 3px solid #333;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #4C6375;
-    color: #F8F8F8;
     padding: 15px 15px; 
-    border-bottom: 3px solid #333;
-    border-top: 3px solid #333;  
 }
 
 nav a, .title {
@@ -30,14 +32,13 @@ nav a, .title {
 .title {
     font-size: 1.2em; 
 }
-
-.article {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    margin: 20px 0; 
+a {
+    color: #4C6375;
 }
-
+a:hover, a:focus {
+    color: #333;
+    transition: 0.5s;
+}
 nav a:hover, nav a:focus {
     color: #FFD700;
     transition: 0.7s;
@@ -47,14 +48,22 @@ nav i {
     margin-left: 5px;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
     margin: 20px 0;
 }
 
-h2, h3 {
+main section h2 {
     margin-bottom: 10px;
     color: #4C6375;
+    text-align: center;
+}
+
+article {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 20px 0; 
 }
 
 figure {
@@ -75,20 +84,58 @@ footer {
     color: white;
     border-top: 3px solid #4C6375; 
 }
+
 footer p {
-    text-align: center  ;
+    text-align: center;
+    color: white;
 }
 
-section {
+main {
     padding: 20px; 
     max-width: 800px; 
     margin: auto; 
 }
 
-.article p {
+article p {
     text-align: justify; 
     margin-bottom: 20px; 
 }
+
+aside {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#table-of-contents ol {
+    list-style-position: inside;
+    padding-left: 20px;
+    text-align: center;
+    margin: auto;
+    max-width: 300px;
+}
+
+#table-of-contents li {
+    text-align: left;
+    margin-bottom: 5px;
+}
+#semanttiset-elementit {
+    padding: 20px;
+    background-color: #f0f0f0;
+    margin: 20px 0;
+}
+
+#semanttiset-elementit h2 {
+    color: #4C6375;
+}
+
+#semanttiset-elementit ol {
+    padding-left: 20px;
+}
+
+#semanttiset-elementit li {
+    margin-bottom: 10px;
+}
+
 ::selection {
     background-color: #FFD700;
     color: #000;
@@ -102,4 +149,15 @@ section {
 ::-webkit-selection {
     background-color: #FFD700;
     color: #000;
+}
+@media only screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .title {
+        margin-top: 10px;
+        font-size: 1em;
+    }
 }
