@@ -153,7 +153,7 @@ header h1 {
 }
 
 .clearfix {
-    *zoom: 1;
+    zoom: 1;
 }
 
 /* ==========================================================================
@@ -219,3 +219,76 @@ header h1 {
         page-break-after: avoid;
     }
 }
+/*MINUN OMAT KIRJOITTAMAT CSS*/
+.container {
+    display: flex;
+  }
+  main.primary-color {
+    padding: 0;
+    padding-bottom: 45px;
+}
+
+  main.primary-color ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  main.primary-color ul li {
+    box-sizing: border-box;
+}
+  aside.default {
+    width: 65%; /* Use a percentage-based width for flexibility */
+  }
+.default p {
+    margin-left: 10%;
+}
+
+
+/* Style for the figure element */
+figure {
+    position: relative; /* Set the positioning context for the absolute figcaption */
+    margin: 45px 0px 0px 45px;
+}
+
+/* Style for the figcaption */
+figcaption {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black */
+    position: absolute;
+    top: 0; /* Position at the top of the figure */
+    left: 0;
+    width: 100%; /* Stretch across the entire width of the figure */
+    box-sizing: border-box; /* Include padding in the width and height */
+
+}
+figcaption h3 {
+    margin-left: 5%;
+    line-height: 10px; /* This controls the height of the figcaption */
+}
+/* Media query esimerkiksi mobiililaitteille */
+@media (max-width: 768px) {
+    body {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .container {
+      display: block; /* Tämä asettaa .container-elementin takaisin normaaliksi block-elementiksi */
+    }
+  
+    aside.default {
+      width: 100%;
+      padding: 5px;
+    }
+    .default p {
+        margin-left: 5%;
+    }
+    main .primary-color ul {
+        justify-content: center;
+    }
+  }
