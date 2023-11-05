@@ -240,35 +240,29 @@ header h1 {
     box-sizing: border-box;
 }
   aside.default {
-    width: 65%; /* Use a percentage-based width for flexibility */
+    width: 65%;
   }
 .default p {
     margin-left: 10%;
 }
-
-
-/* Style for the figure element */
 figure {
-    position: relative; /* Set the positioning context for the absolute figcaption */
+    position: relative;
     margin: 45px 0px 0px 45px;
 }
-
-/* Style for the figcaption */
 figcaption {
     color: white;
-    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black */
+    background-color: rgba(0, 0, 0, 0.4);
     position: absolute;
-    top: 0; /* Position at the top of the figure */
+    top: 0;
     left: 0;
-    width: 100%; /* Stretch across the entire width of the figure */
-    box-sizing: border-box; /* Include padding in the width and height */
+    width: 100%;
+    box-sizing: border-box;
 
 }
 figcaption h3 {
     margin-left: 5%;
-    line-height: 10px; /* This controls the height of the figcaption */
+    line-height: 10px; 
 }
-/* Media query esimerkiksi mobiililaitteille */
 @media (max-width: 768px) {
     body {
         left: 0;
@@ -278,7 +272,7 @@ figcaption h3 {
         margin: auto;
     }
     .container {
-      display: block; /* Tämä asettaa .container-elementin takaisin normaaliksi block-elementiksi */
+      display: block;
     }
   
     aside.default {
