@@ -1,12 +1,45 @@
 /* CSS-tiedostoon voi laittaa kommentin tuollaisten merkkien . Kommentit ei vaikuta koodiin. */
-
-
-header { 
-	background: rgb(210,210,255); /* Toi rgb-arvo ilmaisee vaaleansinistä.*/
-	
+header {
+	background: rgb(210, 210, 255);
+	/* Toi rgb-arvo ilmaisee vaaleansinistä.*/
+	padding: 1%;
 }
 
-aside { 
-	background: rgb(255,210,210); /* Kiva vaaleanpunainen sivupalkkiin..*/
+body,
+h1 {
+	margin: 0;
+	padding: 0;
+}
 
+aside {
+	width: 100%;
+	background: rgb(210, 255, 210);
+
+}
+
+
+#page-container {
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	width: 100%;
+}
+
+@media (min-width: 600px) {
+	#page-container {
+		flex-direction: row;
+	}
+
+	main {
+		width: 75%;
+	}
+
+	aside {
+		width: 25%;
+		background: rgb(255, 210, 210); /* Kiva vaaleanpunainen sivupalkkiin..*/
+
+
+	}
 }
