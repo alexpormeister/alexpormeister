@@ -251,7 +251,8 @@ aside.default {
 }
 
 figure {
-    position: relative; /* HUOM! FIGCAPTION ON POSITION: ABSOLUTE NIIN KUIN TEHTÄVÄSSÄ PYYDETTY */
+    position: relative;
+    /* HUOM! FIGCAPTION ON POSITION: ABSOLUTE NIIN KUIN TEHTÄVÄSSÄ PYYDETTY */
     margin: 45px 0px 0px 45px;
 }
 
