@@ -64,7 +64,7 @@ textarea {
 
 .default {
     background-color: #2a2e89;
-	color: #fff;
+    color: #fff;
 
 }
 
@@ -77,7 +77,7 @@ header {
 }
 
 header h1 {
-	margin: 0;
+    margin: 0;
     font-size: 2em;
     position: absolute;
     top: 0;
@@ -102,11 +102,9 @@ header h1 {
 }
 
 @media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-
-}
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {}
 
 /* ==========================================================================
    Helper classes
@@ -161,6 +159,7 @@ header h1 {
    ========================================================================== */
 
 @media print {
+
     *,
     *:before,
     *:after {
@@ -219,36 +218,43 @@ header h1 {
         page-break-after: avoid;
     }
 }
-/*MINUN OMAT KIRJOITTAMAT CSS*/
+
+/*Alex Pormeister Lisäämät CSS*/
 .container {
     display: flex;
-  }
-  main.primary-color {
+}
+
+main.primary-color {
     padding: 0;
     padding-bottom: 45px;
 }
 
-  main.primary-color ul {
+main.primary-color ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
     padding-left: 0;
     padding-right: 0;
-  }
-  main.primary-color ul li {
+}
+
+main.primary-color ul li {
     box-sizing: border-box;
 }
-  aside.default {
+
+aside.default {
     width: 65%;
-  }
+}
+
 .default p {
     margin-left: 10%;
 }
+
 figure {
-    position: relative;
+    position: relative; /* HUOM! FIGCAPTION ON POSITION: ABSOLUTE NIIN KUIN TEHTÄVÄSSÄ PYYDETTY */
     margin: 45px 0px 0px 45px;
 }
+
 figcaption {
     color: white;
     background-color: rgba(0, 0, 0, 0.4);
@@ -259,30 +265,42 @@ figcaption {
     box-sizing: border-box;
 
 }
+
 figcaption h3 {
     margin-left: 5%;
-    line-height: 10px; 
+    line-height: 10px;
 }
+
 @media (max-width: 768px) {
-    body {
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-    }
     .container {
-      display: block;
+        display: block;
     }
-  
+
+    main.primary-color ul li {
+        width: 50%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    header h1 {
+        font-size: 2em;
+        white-space: nowrap;
+    }
+
+    figure {
+        margin: 0;
+    }
+
+    figure img {
+        width: 100%;
+    }
+
+    figcaption {
+        width: 100%;
+    }
+
     aside.default {
-      width: 100%;
-      padding: 5px;
+        width: 100%;
+        padding: 15px;
     }
-    .default p {
-        margin-left: 5%;
-    }
-    main .primary-color ul {
-        justify-content: center;
-    }
-  }
+}
