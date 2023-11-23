@@ -87,7 +87,6 @@ footer {
     background-color: #333;
     color: white;
     border-top: 3px solid #555; 
-    position: fixed;
     width: 100%;
     bottom: 0;
 }
