@@ -1,0 +1,10 @@
+.aasi {
+    color: green;
+    border: 1px solid black;
+}
+.aasi:hover {
+    color: blue;
+    cursor: wait;
+    transition: 0.5ms;
+    margin-bottom: 5px;
+}

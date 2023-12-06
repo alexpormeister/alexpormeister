@@ -21,7 +21,7 @@ body {
     background-size: cover;
     background-position: center;
     padding: 20px;
-    height: 600px; /* Säädä korkeus tarpeidesi mukaan */
+    height: 500px; /* Säädä korkeus tarpeidesi mukaan */
     position:relative;
     overflow: hidden;
     color: white;
@@ -60,7 +60,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     margin-right: 50px;
     font-weight: bold;  
     font-family: 'Noto Serif', serif;
@@ -83,7 +83,7 @@ nav ul li a:hover {
     text-decoration: none;
     border-radius: 5px; /* Pyöristetyt reunat */
     transition: background-color 0.3s ease-in-out; /* Animointi hover-tilassa */
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 
 #etusivu-page a:hover {
@@ -91,10 +91,10 @@ nav ul li a:hover {
 }
 
 #etusivu-page h2 {
-font-size: 3rem;
+font-size: 2rem;
 }
 #etusivu-page p {
-font-size: 2rem;
+font-size: 1.6rem;
 }
 /* Tyylit main-sisällölle */
 main {
