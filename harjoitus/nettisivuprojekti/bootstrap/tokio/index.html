@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="fi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap & CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Tokio</title>
+    <script src="https://kit.fontawesome.com/eebdfb4933.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../city.css">
+</head>
+
+<body>
+    <!-- Navigointi -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand active" href="../../index.html">Takaisin etusivulle <i
+                    class="fa-solid fa-chevron-right"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../barcelona/index.html">Barcelona</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../bali/index.html">Bali</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="../tokyo/index.html">Tokio</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Otsikko -->
+    <div class="container mt-4">
+        <h1 class="d-flex align-items-center justify-content-center m-5">
+            Tokio <img src="../../assets/japan.png" alt="japan-icon" class="ml-1" style="height: 30px;">
+        </h1>
+    <!-- Perustietoa -->
+        <div class="row">
+            <div class="col-md-6 destination">
+                <img src="../../assets/alex-knight-tokio.jpg" alt="Tokio">
+                <h2>Tokio, Japani</h2>
+                <p>Tokio on vilkas metropoli, joka tarjoaa sekoituksen perinteitä ja moderniutta. Ikonisista
+                    maamerkeistään, kuten Tokyo Towerista, rauhallisiin puutarhoihin ja elävään kaupunkielämään,
+                    Tokiolla on paljon tutkittavaa.</p>
+            </div>
+
+            <!-- Matkavinkit -->
+            <div class="col-md-6 destination">
+                <h2>Matkavinkit Tokioon</h2>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTips"
+                    aria-expanded="false" aria-controls="collapseTips">
+                    Näytä vinkit <i class="fa-solid fa-chevron-right"></i>
+                </button>
+                <div class="collapse mt-3" id="collapseTips">
+                    <div class="card card-body">
+                        <ol>
+                            <li>Vieraile historiallisessa Senso-ji-temppelissä ja Nakamise Shopping Streetillä
+                                kokeaksesi
+                                kulttuurin.</li>
+                            <li>Tutustu eloisan Shibuyan kaupunginosaan ja kohtaa kuuluisa Shibuya Crossing.</li>
+                            <li>Nauti kaupunkinäkymistä Tokyo Towerin tai Tokyo Skytreen näköalatasanteilta.</li>
+                            <li>Nauti japanilaisesta ruoasta, kuten sushista ja ramenista, paikallisissa ravintoloissa
+                                tai hienostuneissa ravintoloissa.</li>
+                            <li>Kävele Shinjuku Gyoenin tai Ueno Parkin rauhoittavissa puutarhoissa.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Paikalliset ruokasuosittelut -->
+                <div class="destination mt-5">
+                    <h2>Paikallinen ruokakulttuuri Tokiossa</h2>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseLocalTips" aria-expanded="false" aria-controls="collapseLocalTips">
+                        Näytä suositukset <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                    <div class="collapse mt-3" id="collapseLocalTips">
+                        <div class="card card-body">
+                            <ul>
+                                <li><b>Sukiyabashi Jiro</b> - Osoite: 4-2-15 Ginza, Chuo-ku, Tokyo</li>
+                                <li><b>Ichiran Ramen</b> - Osoite: Useita sijainteja ympäri Tokiota</li>
+                                <li><b>Uobei</b> - Osoite: Useita sijainteja ympäri Tokiota</li>
+                                <li><b>Kyubey</b> - Osoite: 8-7-6 Ginza, Chuo-ku, Tokyo</li>
+                                <li><b>Tsukiji Market</b> - Osoite: 5 Chome-2-1 Tsukiji, Chuo City, Tokyo</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Aktiviteetit -->
+                    <div class="destination mt-5">
+                        <h2>Parhaat aktiviteetit Tokiossa</h2>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseActivityTips" aria-expanded="false"
+                            aria-controls="collapseActivityTips">
+                            Näytä aktiviteetit <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                        <div class="collapse mt-3" id="collapseActivityTips">
+                            <div class="card card-body bg-light">
+                                <ul>
+                                    <li><b>Robot Restaurant Show</b> - Koe futuristinen robottiteemainen esitys.</li>
+                                    <li><b>Harajukun kaupunginosa</b> - Tutustu trendikkääseen muotiin ja
+                                        cosplay-kulttuuriin.</li>
+                                    <li><b>Sumopainin turnaus</b> - Seuraa Japanin ikivanhan urheilunäytöksen
+                                        live-esiintymistä.</li>
+                                    <li><b>Ghibli-museo</b> - Sukella Studio Ghiblin animaatioiden maailmaan.</li>
+                                    <li><b>Asakusan kulttuuri- ja historiaopastettu kierros</b> - Löydä Tokion rikas
+                                        historia.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vierailijoiden kokemukset -->
+        <div class="row mt-4">
+            <div class="col-md-12 text-center">
+                <h2>Vierailijoiden kokemuksia Tokiosta</h2>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Elävä kaupunkielämä ja kulttuurinen monimuotoisuus</h5>
+                        <p class="card-text">
+                            "Tokio on lumoava kaupunki, joka yhdistää perinteiset arvot ja äärimmäisen modernit
+                            teknologiat. Se on sekoitus vanhaa ja uutta, tarjoten ainutlaatuisen kokemuksen."
+                        </p>
+                        <div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Kauniit puutarhat ja historialliset maamerkit</h5>
+                        <p class="card-text">
+                            "Puutarhat ja historialliset kohteet ovat lumoavia. Tokion huomio perinteisiin vilkkaan
+                            kaupungin keskellä on huomionarvoista."
+                        </p>
+                        <div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star-half-stroke"></i></div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Ruokaelämykset ja katukeittiö</h5>
+                        <p class="card-text">
+                            "Tokion ruokakulttuuri on monipuolinen ja herkullinen! Katukeittiöstä hienostuneisiin
+                            ruokailuelämyksiin jokainen ateria on seikkailu."
+                        </p>
+                        <div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i
+                                class="fa-regular fa-star"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <!--Footer -->
+        <p>&copy; 2023 Matkailusivusto - Alex Pormeister</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

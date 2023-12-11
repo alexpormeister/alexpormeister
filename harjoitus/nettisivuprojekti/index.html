@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matkailusivusto</title>
+    <!-- Tarvittavat Fontit ja css tiedostot -->
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,32 +14,30 @@
 </head>
 
 <body>
+    <!-- Sivun yläosa -->
     <div class="ylatunniste">
         <header>
-            <!-- Ylätunniste - Header -->
             <h1><a href="#">Parhaatmatkat.fi</a></h1>
-            <!-- Lisää tarvittaessa kuvia, linkkejä, navigointia yms. -->
         </header>
-
+        <!-- Navigointi -->
         <nav>
-            <!-- Valikko - Navigation -->
             <ul>
                 <li><a href="#etusivu-page">Etusivu</a></li>
                 <li><a href="#kohteet-scroll">Kohteet</a></li>
                 <li><a href="#vinkit-scroll">Matkavinkit</a></li>
                 <li><a href="#newsletter">Uutiskirje</a></li>
-                <!-- Lisää muita linkkejä tarpeen mukaan -->
             </ul>
         </nav>
+        <!-- Etusivu ns. Jumbotron -->
         <section id="etusivu-page">
             <h2>Tervetuloa Matkailusivustolle</h2>
             <p>Täältä löydät parhaat matkakohteet ja vinkit seuraavaan seikkailuusi!</p>
-            <a href="#">Tutustu lisää</a>
+            <a href="bootstrap/barcelona/index.html">Viikon Suosituin Kohde!</a>
     </div>
     </section>
     <main>
-        <!-- Pääsisältö - Main Content -->
-
+        <!-- Tästä alkaa kaikki matkakohteet ja matkavinkit -->
+        <!-- Matkakohteet -->
         <h2 id="kohteet-scroll">Suositellut Matkakohteet</h2>
         <section id="kohteet">
             <article class="matkakohde">
@@ -50,7 +49,7 @@
                         upeita rantoja kuten Sagrada Familia ja Park Güell. Rannalla voi nauttia Välimeren tunnelmasta
                         ja rentoutua.
                     </p>
-                    <a href="#">Tutustu lisää</a>
+                    <a href="bootstrap/barcelona/index.html">Tutustu lisää</a>
                 </div>
             </article>
             <article class="matkakohde">
@@ -62,7 +61,7 @@
                         rentoutumista. Ubudin riisiterassit ja temppelit ovat henkeäsalpaavan kauniita,
                         ja rannikolla voit nauttia surffauksesta ja auringonlaskuista.
                     </p>
-                    <a href="#">Tutustu lisää</a>
+                    <a href="bootstrap/bali/index.html">Tutustu lisää</a>
 
                 </div>
             </article>
@@ -75,11 +74,11 @@
                         ja herkullista ruokaa tarjoava kaupunki. Shinjukun alue ja Senso-jin temppeli
                         ovat vierailun arvoisia, ja herkulliset sushi-ravintolat tarjoavat ainutlaatuisia makuja.
                     </p>
-                    <a href="#">Tutustu lisää</a>
+                    <a href="bootstrap/tokio/index.html">Tutustu lisää</a>
                 </div>
             </article>
         </section>
-
+        <!-- Matkavinkkejä -->
         <h2 id="vinkit-scroll">Matkavinkit</h2>
 
         <section id="vinkit">
@@ -127,8 +126,8 @@
                 </ul>
             </article>
         </section>
-        <!-- Lisää tarvittaessa muita osioita ja sisältöä -->
     </main>
+    <!-- Uutiskirje -->
     <div id="newsletter">
         <h2>Tilaa Uutiskirjeemme!</h2>
         <p>Saat parhaat matkatarjoukset suoraan sähköpostiisi.</p>
@@ -140,11 +139,11 @@
         </form>
         <p class="success-message" style="display: none;">Kiitos tilauksestasi! Odota uutiskirjettä pian.</p>
     </div>
+    <!-- Footer -->
     <footer>
-        <!-- Alatunniste - Footer -->
         <p>&copy; 2023 Matkailusivusto - Alex Pormeister</p>
-        <!-- Voit lisätä esimerkiksi tekijänoikeustietoja tai muita linkkejä -->
     </footer>
+
 
 </body>
 

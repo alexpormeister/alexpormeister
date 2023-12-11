@@ -1,5 +1,3 @@
-/* Resetoidaan sivun tyylimääritykset */
-/* Resetoidaan sivun tyylimääritykset */
 * {
     margin: 0;
     padding: 0;
@@ -8,21 +6,19 @@
     font-family: 'Lato', sans-serif;
 }
 
-/* Yleiset tyylit */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
 }
 
-/* Ylätunniste-tyylit */
 .ylatunniste {
     background-image: url('assets/link-hoang-etusivu-tausta.jpg');
     background-size: cover;
     background-position: center;
     padding: 20px;
-    height: 500px; /* Säädä korkeus tarpeidesi mukaan */
-    position:relative;
+    height: 500px;
+    position: relative;
     overflow: hidden;
     color: white;
 }
@@ -40,7 +36,6 @@ header h1 a {
     text-decoration: none;
 }
 
-/* Tyylit navigaatiolle */
 nav {
     position: absolute;
     top: 20px;
@@ -67,38 +62,40 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffd700; /* Vaihda väriä, jotta näkyy linkkiä painettaessa */
+    color: #ffd700;
 }
+
 #etusivu-page {
     text-align: center;
     margin-top: 10%;
 }
-/* Tyylit linkkinapille */
+
 #etusivu-page a {
     margin-top: 15px;
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ff7300; /* Taustaväri */
-    color: #fff; /* Tekstin väri */
+    background-color: #ff7300;
+    color: #fff;
     text-decoration: none;
-    border-radius: 5px; /* Pyöristetyt reunat */
-    transition: background-color 0.3s ease-in-out; /* Animointi hover-tilassa */
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
     font-size: 1.1rem;
 }
 
 #etusivu-page a:hover {
-    background-color: #ffc800; /* Taustavärin muutos hover-tilassa */
+    background-color: #ffc800;
 }
 
 #etusivu-page h2 {
-font-size: 2rem;
+    font-size: 2rem;
 }
+
 #etusivu-page p {
-font-size: 1.6rem;
+    font-size: 1.6rem;
 }
-/* Tyylit main-sisällölle */
+
 main {
-    padding: 50px;    
+    padding: 50px;
 }
 
 main h2 {
@@ -107,77 +104,54 @@ main h2 {
     font-size: 2rem;
 }
 
-/* Tyylit matkakohteille */
 #kohteet {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .matkakohde {
     width: calc(33.33% - 35px);
     margin: 0 10px 35px;
     position: relative;
-    border: 2px solid #ccc; /* Reunusleveys ja väri */
-    border-radius: 5px; /* Pyöristetyt reunat */
-    padding: 30px; /* Lisää hieman tilaa sisällölle */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 30px;
     padding-bottom: 80px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Lisää hieman varjoa */
-    
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .matkakohde img {
     width: 100%;
-    height: 275px; /* Muuta tarvittaessa */
+    height: 275px;
     object-fit: cover;
     display: block;
 }
 
-.matkakohde .otsikko {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
-
-.matkakohde .tarkennus {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.matkakohde:hover .tarkennus {
-    opacity: 1;
-}
 .matkakohde h3 {
     text-align: center;
     background-color: rgb(31, 30, 30);
     color: white;
-    font-weight:bold;
-padding: 10px;
+    font-weight: bold;
+    padding: 10px;
 }
 
 .matkakohde .teksti a {
-position: absolute;
+    position: absolute;
     bottom: 10px;
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ff7300; /* Taustaväri */
-    color: #fff; /* Tekstin väri */
+    background-color: #ff7300;
+    color: #fff;
     text-decoration: none;
-    border-radius: 5px; /* Pyöristetyt reunat */
-    transition: background-color 0.3s ease-in-out; /* Animointi hover-tilassa */
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
 }
-.matkakohde .teksti a:hover {
-    background-color: #ffc800; /* Taustavärin muutos hover-tilassa */
 
+.matkakohde .teksti a:hover {
+    background-color: #ffc800;
 }
-/* Tyyli Matkavinkit-osiolle */
+
 #vinkit {
     margin-top: 20px;
     display: flex;
@@ -192,23 +166,23 @@ position: absolute;
 }
 
 #vinkit article {
-    width: 48%; /* Säädä leveys tarpeidesi mukaan */
-    margin-bottom: 20px; /* Lisää haluamasi marginaali elementtien välille */
+    width: 48%;
+    margin-bottom: 20px;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Lisää hieman varjoa */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding-left: 50px;
 }
 
 #vinkit article h3 {
     font-size: 1.8rem;
     margin-bottom: 15px;
-    color: #333; /* Tekstin väri */
+    color: #333;
 }
 
 #vinkit article ul {
     font-size: 1.2rem;
-    color: #555; /* Tekstin väri */
+    color: #555;
     line-height: 1.6;
     list-style: square;
 }
@@ -221,20 +195,17 @@ position: absolute;
     max-width: 100%;
     display: block;
     margin: 0 auto;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Lisätään siirtymätehoste ja varjo */
-    max-height: 600px; /* Pienennetään kuvan korkeutta */
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); /* Lisätään kevyt varjo */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    max-height: 600px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
     margin-bottom: 50px;
 }
 
-/* Hover-efekti */
 #vinkit img:hover {
-    transform: scale(1.05) translateY(-5px); /* Suurennetaan ja liikutetaan kuvaa ylöspäin hoveroidessa */
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6); /* Voimistetaan varjoa */
-
-
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
 }
-/* Uutiskirjeen tilausosa */
+
 #newsletter {
     background-color: #f4f4f4;
     padding: 20px;
@@ -256,8 +227,8 @@ position: absolute;
 #newsletter form {
     display: flex;
     flex-direction: column;
-    width: 60%; /* Voit muuttaa leveyttä tarpeidesi mukaan */
-    margin: 0 auto; /* Tämä keskittää lomakkeen */
+    width: 60%;
+    margin: 0 auto;
 }
 
 #newsletter label,
@@ -287,15 +258,7 @@ position: absolute;
     background-color: #ffc800;
 }
 
-#newsletter .success-message {
-    display: none;
-    color: green;
-    font-weight: bold;
-    margin-top: 10px;
-}
 
-
-/* Tyylitellään footer */
 footer {
     background-color: #333;
     color: #fff;

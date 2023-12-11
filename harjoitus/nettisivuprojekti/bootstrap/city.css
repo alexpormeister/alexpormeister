@@ -1,0 +1,60 @@
+body {
+    padding-top: 60px;
+}
+
+.destination {
+    margin-bottom: 30px;
+}
+
+.destination img {
+    max-width: 100%;
+    height: auto;
+}
+
+.destination h2 {
+    margin-top: 10px;
+}
+
+.destination p {
+    font-size: 0.9rem;
+    color: #555;
+}
+button.btn-primary {
+    background-color: #ff7300;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+    border: 1px solid #ff7300;
+}
+
+button.btn-primary:hover {
+    background-color: #ffc800; 
+    border: 1px solid #ffc800;
+}
+button.btn-primary:active {
+    background-color: #ffc800;
+    border: 1px solid #ffc800;
+}
+.navbar {
+    background-color: #ff7300;
+}
+.navbar a {
+    color: white;
+}
+.navbar a:hover {
+    color: white;
+}
+.active {
+    font-weight: bold;
+}
+.destination p {
+    font-size: 1.3rem;
+}
+
+footer {
+background-color: #333;
+color: #fff;
+text-align: center;
+padding: 10px 0;
+bottom: 0;
+width: 100%;
+}
